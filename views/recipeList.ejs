@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe List</title>
+    <style>
+        .parent-box #reciepe {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            cursor: pointer;
+            gap: 25px;
+        }
+        img {
+            width: 350px;
+            height: 280px;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include("nav") %>
+        <section class="parent-box">
+            <div id="reciepe"></div>
+        </section>
+</body>
+<script src="/index.js"></script>
+
+</html>

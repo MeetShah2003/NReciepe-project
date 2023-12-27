@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipes</title>
+    <style>
+        .parent-box #reciepe {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        img {
+            width: 350px;
+            height: 280px;
+        }
+
+
+        .parent-box #reciepe #btnDelete {
+            background-color: pink;
+            border: none;
+            padding: 20px 30px;
+            border-radius: 15px;
+            width: 100px;
+            cursor: pointer;
+            transition: all ease-in-out 0.5s;
+        }
+
+        .parent-box #reciepe #btnDelete:hover {
+            background-color: black;
+            color: goldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include("nav") %>
+        <div class="parent-box">
+            <div id="reciepe"></div>
+        </div>
+</body>
+<script src="/myRecipes.js"></script>
+
+</html>

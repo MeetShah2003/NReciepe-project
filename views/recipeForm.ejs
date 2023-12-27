@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Form</title>
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <%- include("nav") %>
+    <section class="reciepeForm">
+        <form action="/reciepe/create" method="post" id="form">
+            <input type="url" id="img" name="img" placeholder="Enter IMG URL">
+            <input type="text" name="reciepename" id="reciepename" placeholder="Enter RecipeName">
+            <input type="text" id="time" name="time" placeholder="Enter Time">
+            <input type="text" name="author" id="author" placeholder="Enter Author">
+            <input type="text" id="description" name="description" placeholder="Enter Description">
+            <input type="submit" value="ADD" id="add">
+        </form>
+    </section>
+</body>
+</html>
