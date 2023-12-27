@@ -18,7 +18,7 @@ const displayReciepe = (data) => {
       dltReciepe(ele._id);
     });
     let div = document.createElement("div");
-    div.append(img, name, time, author, description, btn1);
+    div.append(img, reciepename, time, author, description, btn1);
     document.getElementById("reciepe").append(div);
   });
 };

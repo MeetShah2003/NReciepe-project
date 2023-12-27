@@ -32,8 +32,8 @@ const displayReciepe = (data) => {
   data.map((ele) => {
     let img = document.createElement("img");
     img.src = ele.img;
-    let name = document.createElement("h3");
-    name.innerHTML = ele.name;
+    let reciepename = document.createElement("h3");
+    reciepename.innerHTML = ele.reciepename;
     let time = document.createElement("h5");
     time.innerHTML = ele.time;
     let author = document.createElement("h2");
@@ -41,7 +41,7 @@ const displayReciepe = (data) => {
     let description = document.createElement("p");
     description.innerHTML = ele.description;
     let div = document.createElement("div");
-    div.append(img, name, time, author, description);
+    div.append(img, reciepename, time, author, description);
     document.getElementById("reciepe").append(div);
   });
 };
